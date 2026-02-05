@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>College Hub</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         * {
             box-sizing: border-box;
@@ -102,6 +102,35 @@
             transform: translateY(-2px);
             box-shadow: 0 8px 18px rgba(102, 126, 234, 0.5);
     }
+            /* MOBILE FIX */
+        @media (max-width: 768px) {
+
+        header h1 {
+            font-size: 24px;
+        }
+        header p {
+            font-size: 14px;
+            }
+
+        .app {
+            padding: 18px;
+            border-radius: 16px 16px 0 0;
+            }
+
+        .card {
+            padding: 20px 12px;
+            }
+
+        .card span {
+            font-size: 28px;
+            }
+
+        .link-btn {
+            font-size: 12px;
+            padding: 6px 12px;
+            }
+        }
+
     </style>
 </head>
 
