@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Hub</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            min-height: 100vh;
+        }
+
+        header {
+            padding: 25px 15px;
+            text-align: center;
+            color: white;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+
+        header p {
+            margin-top: 8px;
+            opacity: 0.9;
+        }
+
+        .app {
+            background: #f9fafb;
+            border-radius: 20px 20px 0 0;
+            padding: 25px;
+            min-height: 70vh;
+        }
+
+        .search {
+            margin-bottom: 20px;
+        }
+
+        .search input {
+            width: 100%;
+            padding: 12px 15px;
+            border-radius: 10px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        .subjects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px 15px;
+            border-radius: 15px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .card span {
+            font-size: 32px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 30px;
+        }
+        .link-btn {
+            display: inline-block;
+            padding: 7px 14px;
+            margin: 6px 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 999px; /* pill shape */
+            font-size: 13px;
+            font-weight: 500;
+            transition: transform 0.25s, box-shadow 0.25s;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.35);
+    }
+
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(102, 126, 234, 0.5);
+    }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 College Hub</h1>
+        <p>Syllabus & notes — all in one place</p>
+    </header>
+
+    <div class="app">
+
+        <div class="search">
+            <input type="text" placeholder="🔍 Search subject (coming soon)">
+        </div>
+        <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
+
+        <h2>🎓 BCA 1st Semester Unit wise Notes</h2>
+
+    <div class="subjects">
+
+        <div class="card">
+            <span>📘</span>
+            <strong>Mathematics</strong><br><br>
+            <a href="https://example.com" target="_blank" class="link-btn">Notes</a>
+        </div>
+
+        <div class="card">
+            <span>💻</span>
+            <strong>Programming in C</strong><br><br>
+            <a href="c.html" target="_blank" class="link-btn">Notes</a>
+        </div>
+
+        <div class="card">
+            <span>🧠</span>
+            <strong>Digital Architecture</strong><br><br>
+            <a href="https://example.com" target="_blank" class="link-btn">Notes</a>
+        </div>
+
+        <div class="card">
+            <span>🌱</span>
+            <strong>Environmental Studies</strong><br><br>
+            <a href="https://example.com" target="_blank" class="link-btn">Notes</a>
+        </div>
+
+        <div class="card">
+            <span>📖</span>
+            <strong>General English</strong><br><br>
+            <a href="https://example.com" target="_blank" class="link-btn">Notes</a>
+        </div>
+
+
+    </div>
+
+        <footer>
+            Made by Khan · For Students ❤️
+        </footer>
+
+    </div>
+
+</body>
+</html>
