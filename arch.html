@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computer Architecture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            min-height: 100vh;
+            color: #eaeaea;
+        }
+
+        header {
+            padding: 20px 15px;
+            text-align: center;
+            color: white;
+        }
+
+        .app {
+            background: #111827;
+            border-radius: 20px 20px 0 0;
+            padding: 25px;
+            min-height: 70vh;
+        }
+
+        .top-bar {
+            margin-bottom: 20px;
+        }
+
+        .home-btn {
+            padding: 8px 16px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 999px;
+            font-size: 13px;
+            font-weight: 500;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.35);
+        }
+
+        h2 {
+            color: #e5e7eb;
+            margin-bottom: 15px;
+        }
+
+        .lab-section {
+            background: #1f2933;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+        }
+
+        .experiment {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111827;
+            padding: 12px 15px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+
+        .link-btn {
+            padding: 6px 14px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 999px;
+            font-size: 12px;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.35);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #9ca3af;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .experiment {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+        }
+        .coming-soon {
+            justify-content: center;
+            opacity: 0.7;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🧠 Computer Architecture</h1>
+        <p>BCA 1st Semester</p>
+    </header>
+
+    <div class="app">
+
+        <div class="top-bar">
+            <a href="index.html" class="home-btn">Home</a>
+        </div>
+
+        <h2>🧪 Computer Architecture Lab Experiments</h2>
+
+        <div class="lab-section">
+
+            <div class="experiment">
+                <span>Experiment 1: Verification of the truth tables of logic gates (T2)</span>
+                <a href="https://drive.google.com/file/d/16x0aXTp5lFbt0DSH4Ihh1CsTMJ9ZlAlJ/view?usp=drive_link"
+                   target="_blank"
+                   class="link-btn">View PDF</a>
+            </div>
+
+            <div class="experiment">
+                <span>Experiment 2: Realisation of Basic Gates Using Universal Gates (T2)</span>
+                <a href="https://drive.google.com/file/d/111dLJEEflg8KlyVwOt95h88HMOOWv0Me/view?usp=sharing"
+                   target="_blank"
+                   class="link-btn">View PDF</a>
+            </div>
+
+            <div class="experiment">
+                <span>Experiment 3: Binary to Gray Conversion & Vice Versa (T2)</span>
+                <a href="https://drive.google.com/file/d/1xPrDWYi3xKV2VUvoORzrVVHarFfWHWY1/view?usp=sharing"
+                   target="_blank"
+                   class="link-btn">View PDF</a>
+            </div>
+
+            <div class="experiment">
+                <span>Decoder and Mux Using Basic Gates (T2)</span>
+                <a href="https://drive.google.com/file/d/11It_jkQQztCRG5mXrmXmrr59Bf30lu4B/view?usp=sharing"
+                   target="_blank"
+                   class="link-btn">View PDF</a>
+            </div>
+
+            <div class="experiment coming-soon">
+                More experiments will be uploaded soon…
+            </div>
+        </div>
+
+        <footer>
+            Made by kAI · For Students ❤️<br>
+            © 2026 kAI Company
+        </footer>
+
+    </div>
+
+</body>
+</html>
