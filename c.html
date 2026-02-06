@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Mathematics</title>
+    <title>Programming in C</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: "Segoe UI", Arial, sans-serif;
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             min-height: 100vh;
+            color: #eaeaea;
         }
 
         header {
-            color: white;
-            padding: 20px;
+            padding: 20px 15px;
             text-align: center;
+            color: white;
         }
 
         .app {
-            background: #f9fafb;
+            background: #111827;
             border-radius: 20px 20px 0 0;
             padding: 25px;
             min-height: 70vh;
@@ -31,42 +37,68 @@
 
         .home-btn {
             padding: 8px 16px;
-            background: #667eea;
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
             text-decoration: none;
-            border-radius: 8px;
-            font-size: 14px;
+            border-radius: 999px;
+            font-size: 13px;
             font-weight: 500;
-            display: inline-block;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.35);
         }
 
         .home-btn:hover {
-            background: #5563d6;
+            box-shadow: 0 8px 18px rgba(102, 126, 234, 0.5);
         }
 
-        .section {
-            margin-bottom: 25px;
+        h2 {
+            color: #e5e7eb;
+            margin-bottom: 15px;
         }
 
-        .section h2 {
-            margin-bottom: 10px;
+        .unit {
+            background: #1f2933;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.6);
         }
 
-        .item {
-            background: white;
-            padding: 15px;
-            border-radius: 12px;
-            margin-bottom: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        .unit h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
         }
 
-        .item a {
+        .link-btn {
+            display: inline-block;
+            padding: 7px 14px;
+            margin: 6px 4px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
             text-decoration: none;
-            color: #667eea;
+            border-radius: 999px;
+            font-size: 13px;
             font-weight: 500;
+            transition: transform 0.25s, box-shadow 0.25s;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.35);
+        }
+
+        .link-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(102, 126, 234, 0.5);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            color: #9ca3af;
+            margin-top: 30px;
+        }
+
+        /* MOBILE FIX */
+        @media (max-width: 768px) {
+            .app {
+                padding: 18px;
+            }
         }
     </style>
 </head>
@@ -74,39 +106,53 @@
 <body>
 
     <header>
-        <h1>📘 Mathematics</h1>
-        <p>Assignments & Notes</p>
+        <h1>💻 Programming in C</h1>
+        <p>BCA 1st Semester</p>
     </header>
 
     <div class="app">
 
-        <!-- HOME BUTTON (TOP LEFT) -->
+        <!-- HOME BUTTON -->
         <div class="top-bar">
             <a href="index.html" class="home-btn">Home</a>
         </div>
 
-        <div class="section">
-            <h2>📌 Assignments</h2>
+        <h2>📘 Units</h2>
 
-            <div class="item">
-                <span>Assignment 1</span>
-                <a href="https://chatgpt.com" target="_blank">Open</a>
-            </div>
-
-            <div class="item">
-                <span>Assignment 2</span>
-                <a href="https://example.com" target="_blank">Open</a>
-            </div>
+        <!-- UNIT 1 -->
+        <div class="unit">
+            <h3>Unit 1: Introduction to C</h3>
+            <a href="https://example.com" target="_blank" class="link-btn">Syllabus</a>
+            <a href="https://drive.google.com/file/d/19xMrsNJyziwHb2xS41HDJQ2fJj9T5h5l/view?usp=drive_link"
+            target="_blank"
+            class="link-btn">
+            Unit 1 Notes (PDF)
+            </a>
+            <a href="https://example.com" target="_blank" class="link-btn">Programs</a>
         </div>
 
-        <div class="section">
-            <h2>📂 Notes / PPT</h2>
-
-            <div class="item">
-                <span>Unit 1 Notes</span>
-                <a href="https://docs.google.com/document/d/1MR_WrBSruLfqDJ79jcmf5ZaTFfqlEDa_WhgSeTNUkng/edit?usp=drivesdk" target="_blank">View</a>
-            </div>
+        <!-- UNIT 2 (placeholder) -->
+        <div class="unit">
+            <h3>Unit 2: Control Statements</h3>
+            <span style="opacity:0.7;">Coming Soon</span>
         </div>
+
+        <!-- UNIT 3 (placeholder) -->
+        <div class="unit">
+            <h3>Unit 3: Functions & Arrays</h3>
+            <span style="opacity:0.7;">Coming Soon</span>
+        </div>
+
+        <!-- UNIT 4 (placeholder) -->
+        <div class="unit">
+            <h3>Unit 4: Pointers & Structures</h3>
+            <span style="opacity:0.7;">Coming Soon</span>
+        </div>
+
+        <footer>
+            Made by kAI · For Students ❤️<br>
+            © 2026 kAI Company
+        </footer>
 
     </div>
 

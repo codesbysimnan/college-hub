@@ -11,10 +11,11 @@
         body {
             margin: 0;
             font-family: "Segoe UI", Arial, sans-serif;
-            background: linear-gradient(135deg, #43cea2, #185a9d);
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             min-height: 100vh;
+            color: #eaeaea;
         }
-
+        
         header {
             padding: 25px 15px;
             text-align: center;
@@ -32,7 +33,7 @@
         }
 
         .app {
-            background: #f9fafb;
+            background: #111827; /* dark card background */
             border-radius: 20px 20px 0 0;
             padding: 25px;
             min-height: 70vh;
@@ -57,14 +58,19 @@
         }
 
         .card {
-            background: white;
+            background: #1f2933;
             padding: 25px 15px;
             border-radius: 15px;
             text-align: center;
             text-decoration: none;
-            color: #333;
-            box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+            color: #eaeaea;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.6);
             transition: transform 0.25s, box-shadow 0.25s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.9);
         }
 
         .card span {
@@ -129,6 +135,13 @@
             font-size: 12px;
             padding: 6px 12px;
             }
+        h2 {
+            color: #e5e7eb;
+        }
+
+        footer {
+            color: #9ca3af;
+        }
         }
 
     </style>
@@ -138,7 +151,7 @@
 
     <header>
         <h1>📚 College Hub</h1>
-        <p>Syllabus & notes — all in one place</p>
+        <p>Study Material - All in one place</p>
     </header>
 
     <div class="app">
@@ -148,45 +161,32 @@
         </div>
         <hr style="margin: 30px 0; border: none; border-top: 1px solid #ddd;">
 
-        <h2>🎓 BCA 1st Semester Unit wise Notes</h2>
+        <h2>🎓 BCA 1st Semester</h2>
 
     <div class="subjects">
 
         <div class="card">
             <span>📘</span>
             <strong>Mathematics</strong><br><br>
-            <a href="https://example.com" target="_blank" class="link-btn">Notes</a>
+            <a href="maths.html" class="link-btn">Click here</a>
         </div>
 
         <div class="card">
             <span>💻</span>
             <strong>Programming in C</strong><br><br>
-            <a href="c.html" target="_blank" class="link-btn">Notes</a>
+            <a href="c.html" class="link-btn">Click here</a>
         </div>
 
         <div class="card">
             <span>🧠</span>
             <strong>Digital Architecture</strong><br><br>
-            <a href="https://example.com" target="_blank" class="link-btn">Notes</a>
+            <a href="arch.html" class="link-btn">Click here</a>
         </div>
-
-        <div class="card">
-            <span>🌱</span>
-            <strong>Environmental Studies</strong><br><br>
-            <a href="https://example.com" target="_blank" class="link-btn">Notes</a>
-        </div>
-
-        <div class="card">
-            <span>📖</span>
-            <strong>General English</strong><br><br>
-            <a href="https://example.com" target="_blank" class="link-btn">Notes</a>
-        </div>
-
-
     </div>
 
         <footer>
-            Made by Khan · For Students ❤️
+          Made by kAI ·  For Students ❤️<br>
+                © 2026 kAI Company
         </footer>
 
     </div>
